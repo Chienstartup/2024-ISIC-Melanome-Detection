@@ -1,6 +1,8 @@
 # ISIC_2024
 
 This repo is only to demonstrate the simplified workflow for the ISIC 2024 competition. Due to the size constraint put by GitHub, I sampled only 5000 rows out of the 400k original dataset.
+The reason why I only use the ipynb is that this competition required much of computation power and GPU, so I only use Kaggle notebook and Colab.
+
 Based on the EDA for full dataset, I can tell that this dataset is extremely imbalance between target 0 and target 1. While the target 0 data is about 400k rows, 
 the target 1 data is only 393 rows. Even though all participants tried to solve the imbalance by using datasets in the previoius competitions, but the resolution of pictures this time is very low
 when compared to those in the other competitions. Consequently, if we include images data from previous competition, the performance of our models will drop significantly. Therefore, the majority of
