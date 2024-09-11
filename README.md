@@ -26,3 +26,8 @@ The df_train_filtered produced by features_selection.ipynb is stored in the meta
 
 #Step 4: Ensemble LGB + CAT + XGB and hypertuning for the params
   * Using optuna to create objectives for 3 models to find params for each.
+
+#Step 5: Training CNN with pretrained Imagenet and df_train_filtered to get out of fold prediction and models
+  * Only change the classifier at the end of pretrained Imagenet
+  * Using folds to train 5 fold models
+  * Get oof prediction for train data
