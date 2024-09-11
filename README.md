@@ -10,8 +10,10 @@ when compared to those in the other competitions. Consequently, if we include im
 participants actually proceed with only ISIC 2024 imbalance dataset.
 
 Baseline CV_score: 0.1545
+
 Feature Selection and Hypertuning: 0.1688
-GBMs combined CNNs: 
+
+GBMs combined CNNs: 0.1886
 
 #Step 1: EDA
   * Using EDA.ipynb to generate the report.html.
