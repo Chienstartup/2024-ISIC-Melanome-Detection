@@ -15,6 +15,7 @@ participants actually proceed with only ISIC 2024 imbalance dataset.
   * features based on clinical assessments
   * features based on ICC and standardization
   * features used by Kaggle Masters
+    
 The df_train produced by features_engineering.ipynb is stored in the meta_data folder.
 
 #Step 3:
