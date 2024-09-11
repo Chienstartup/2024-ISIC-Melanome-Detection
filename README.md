@@ -35,5 +35,7 @@ The df_train_filtered produced by features_selection.ipynb is stored in the meta
   * Note: for running this notebook, one should use colab with at least 20 RAM GPU in order to train the CNN with image size of 384.
 
 #Step 6: Combine CNN prediction as new features to the feature_cols and input feature_cols to the ensemble GBMs model
+  * here, I do not predict for the test data. Only for showing improvement on the cv_score
+  * 5 oof CNN models due to size limitation cannot be uploaded to GitHub, so I only upload the oof_predictions
 
 With all the steps above, one should get a significant improvement of the pAUC score.
