@@ -11,7 +11,7 @@ participants actually proceed with only ISIC 2024 imbalance dataset.
 
 *CV_score metric: pAUC, maximum 0.2000
 
-Baseline CV_score: 0.1545
+Only Tabular Data Baseline CV_score: 0.1545
 
 Feature Selection and Hypertuning GBMs CV_score: 0.1688
 
