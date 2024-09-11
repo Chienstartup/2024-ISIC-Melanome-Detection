@@ -9,6 +9,8 @@ the target 1 data is only 393 rows. Even though all participants tried to solve 
 when compared to those in the other competitions. Consequently, if we include images data from previous competition, the performance of our models will drop significantly. Therefore, the majority of
 participants actually proceed with only ISIC 2024 imbalance dataset.
 
+*CV_score metric: pAUC, maximum 0.200
+
 Baseline CV_score: 0.1545
 
 Feature Selection and Hypertuning GBMs CV_score: 0.1688
