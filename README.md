@@ -31,3 +31,9 @@ The df_train_filtered produced by features_selection.ipynb is stored in the meta
   * Only change the classifier at the end of pretrained Imagenet
   * Using folds to train 5 fold models
   * Get oof prediction for train data
+  * Note: for this step, when Training CNN with pretrained structure notebook, one should upload the sample_5k.hdf to colab by oneself due to GitHub constraint on raw file link.
+  * Note: for running this notebook, one should use colab with at least 20 RAM GPU in order to train the CNN with image size of 384.
+
+#Step 6: Combine CNN prediction as new features to the feature_cols and input feature_cols to the ensemble GBMs model
+
+With all the steps above, one should get a significant improvement of the pAUC score.
