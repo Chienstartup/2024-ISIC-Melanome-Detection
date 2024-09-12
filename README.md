@@ -13,6 +13,7 @@ participants actually proceed with only ISIC 2024 imbalance dataset.
 ### Metric
 CV_score metric: pAUC, maximum 0.2000
 
+```
 def custom_metric_binary(y_true, y_pred):
     y_hat = y_pred[:, 1] if y_pred.ndim > 1 else y_pred
     y_true_binary = y_true
@@ -23,6 +24,7 @@ def custom_metric_binary(y_true, y_pred):
     partial_auc_scaled = roc_auc_score(v_gt, v_pred, max_fpr=max_fpr)
     partial_auc = 0.5 * max_fpr**2 + (max_fpr - 0.5 * max_fpr**2) / (1.0 - 0.5) * (partial_auc_scaled - 0.5)
     return partial_auc
+```
 
 ### Improvement on Performance:
 
