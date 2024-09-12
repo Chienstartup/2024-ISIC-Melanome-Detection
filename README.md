@@ -32,11 +32,11 @@ def custom_metric_binary(y_true, y_pred):
 
 ### Improvement on Performance:
 
-> Only Tabular Data Baseline CV_score: 0.1545
-
-> Feature Selection and Hypertuning GBMs CV_score: 0.1688
-
-> Combined CNNs CV_score: 0.1886
+| Approach| CV_Score (pAUC) |
+| --- | --- |
+| Only Tabular Data Baseline| 0.1545 |
+| Feature Selection and Hypertuning GBMs | 0.1688 |
+| Combined CNNs and GBMs | 0.1886 |
 
 ### Development Process
 
