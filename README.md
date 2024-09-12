@@ -34,32 +34,32 @@ Combined CNNs CV_score: 0.1886
 
 ### Development Process
 
-**Step 1: EDA
+**Step 1: EDA**
   * Using EDA.ipynb to generate the report.html.
     
-**Step 2: Features Engineering
+**Step 2: Features Engineering**
   * features based on clinical assessments
   * features based on ICC and standardization
   * features used by Kaggle Masters
     
 The df_train produced by features_engineering.ipynb is stored in the meta_data folder.
 
-**Step 3: Features Selection
+**Step 3: Features Selection**
   * Using lgbm to generate oof_predictions score based on customized metric for 5 folds and stepwise add one feature to find the best possible combination of features.
 
 The df_train_filtered produced by features_selection.ipynb is stored in the meta_data folder.
 
-**Step 4: Ensemble LGB + CAT + XGB and hypertuning for the params
+**Step 4: Ensemble LGB + CAT + XGB and hypertuning for the params**
   * Using optuna to create objectives for 3 models to find params for each.
 
-**Step 5: Training CNN with pretrained Imagenet and df_train_filtered to get out of fold prediction and models
+**Step 5: Training CNN with pretrained Imagenet and df_train_filtered to get out of fold prediction and models**
   * Only change the classifier at the end of pretrained Imagenet
   * Using folds to train 5 fold models
   * Get oof prediction for train data
   * Note: for this step, when Training CNN with pretrained structure notebook, one should upload the sample_5k.hdf to colab by oneself due to GitHub constraint on raw file link.
   * Note: for running this notebook, one should use colab with at least 20 RAM GPU in order to train the CNN with image size of 384.
 
-**Step 6: Combine CNN prediction as new features to the feature_cols and input feature_cols to the ensemble GBMs model
+**Step 6: Combine CNN prediction as new features to the feature_cols and input feature_cols to the ensemble GBMs model**
   * here, I do not predict for the test data. Only for showing improvement on the cv_score
   * 5 oof CNN models due to size limitation cannot be uploaded to GitHub, so I only upload the oof_predictions
 
