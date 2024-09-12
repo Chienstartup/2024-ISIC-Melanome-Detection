@@ -13,7 +13,7 @@ participants actually proceed with only ISIC 2024 imbalance dataset.
 ### Metric
 CV_score metric:  partial area under the ROC curve (pAUC), maximum 0.2000
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/Chienstartup/ISIC_2024/blob/main/isic_data/pauc.png)
+![Screenshot](https://github.com/Chienstartup/ISIC_2024/blob/main/isic_data/pauc.png)
 
 ```
 def custom_metric_binary(y_true, y_pred):
