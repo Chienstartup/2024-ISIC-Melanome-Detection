@@ -11,7 +11,7 @@ participants actually proceed with only ISIC 2024 imbalance dataset.
 
 
 ### Metric
-CV_score metric: partial AUC, maximum 0.2000
+CV_score metric:  partial area under the ROC curve (pAUC), maximum 0.2000
 
 ```
 def custom_metric_binary(y_true, y_pred):
