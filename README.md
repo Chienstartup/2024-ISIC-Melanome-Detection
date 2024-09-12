@@ -16,12 +16,10 @@ def custom_metric_binary(y_true, y_pred):
     y_true_binary = y_true
     min_tpr = 0.80
     max_fpr = 1 - min_tpr
-
     v_gt = 1 - y_true_binary
     v_pred = 1 - y_hat
     partial_auc_scaled = roc_auc_score(v_gt, v_pred, max_fpr=max_fpr)
     partial_auc = 0.5 * max_fpr**2 + (max_fpr - 0.5 * max_fpr**2) / (1.0 - 0.5) * (partial_auc_scaled - 0.5)
-
     return partial_auc
 
 Improvement on Performance:
