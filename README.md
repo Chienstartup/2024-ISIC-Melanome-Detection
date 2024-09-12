@@ -30,7 +30,7 @@ def custom_metric_binary(y_true, y_pred):
     return partial_auc
 ```
 
-### Improvement on Performance:
+### Improvement on Performance (Sample 5k):
 
 | Approach| CV_Score (pAUC) |
 | :--- | --- |
